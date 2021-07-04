@@ -178,9 +178,19 @@ main {
   padding: 5px;
 }
 .timer{
-  color: #737373;
-  height: 30px;
+  width: 100%;
+  height: 50px;
   background-color: #f9edd1;
   border-bottom: 5px dashed #d6e3dd;
-  display: inline-block;
+  display: inline-inline-grid;
+}
+.timer-txt{
+  color: #737373;
+  float:left;
+  margin-left: 300px;
+  padding-right: 5px;
+}
+.timer-n{
+  color: #737373;
+  padding: 22px;
 }
