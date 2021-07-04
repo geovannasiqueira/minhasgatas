@@ -151,7 +151,7 @@ main {
 }
 .date-time{
   color: #737373;
-  background-color: #f9edd1;
+  background-color: #fffaee;
   border-bottom: 5px dashed #ffc872;
   border-top: 5px dashed #f9d5ce;
   height: 70px;
@@ -175,4 +175,10 @@ main {
   background-image: url(../img/calendar.png);
   margin-top: 20px;
   padding: 5px;
+}
+.timer{
+  color: #737373;
+  height: 30px;
+  background-color: #f9edd1;
+  border-bottom: 5px dashed #d6e3dd;
 }
