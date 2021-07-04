@@ -1,0 +1,125 @@
+  <html>
+
+  <head>
+    <link rel="shortcut icon" href="./img/icon.png">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <title>Site das Quiancas</title>
+    <script type="text/javascript">
+      var starttime = new Date();
+
+      function time() {
+        today = new Date();
+        h = today.getHours();
+        m = today.getMinutes();
+        s = today.getSeconds();
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+
+        h = today.getHours() - starttime.getHours();
+        m = today.getMinutes() - starttime.getMinutes();
+        s = today.getSeconds() - starttime.getSeconds();
+        document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+      }
+      setInterval(time, 500);
+    </script>
+    <script type="text/javascript">
+      dayName = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+      monName = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+      now = new Date();
+    </script>
+  </head>
+
+  <body onload="time()">
+    <header class="menu-principal">
+      <main>
+        <div class="header-1">
+          <div class="logo">
+            <img src="./img/logo.png" alt="logo" title="Site das Quianças" />
+          </div>
+          <div class="redes-sociais">
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/__gccs/?hl=pt-br" target="_blank">
+                  <img src="./img/ig.png" alt="instagram" title="instagram" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </header>
+    <main class="col-100 menu-urls">
+      <div class="header-2">
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#Purê">Purê</a>
+            </li>
+            <li>
+              <a href="#margarina">Margarina</a>
+            </li>
+            <li>
+              <a href="#kekkei genkai">Kekkei Genkai</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <main class="imagem-home">
+      <div class="img-home">
+        <img src="./img/welcome.png" alt="welcome" title="Bem-vindo" />
+      </div>
+    </main>
+    <main class="pure">
+      <div class="container">
+        <div class="purepng">
+          <img src="./img/pure.png" alt="pureza" title="pulezinha">
+        </div>
+        <div class="pure-text">
+          <h1>Purê <a name="Purê"></a> </h1>
+          <h2> s.m | gato | comida </h2>
+          <p> 1. variações: fantolesa, patola, rabonesa, patrulheira, patolina, espeto,espetolíquida...</p>
+          <p>2. atividades favoritas: dormir, comer, gritar, comer rúcula, odiar seus irmãos.</p>
+          <p>3. habilidades: dormir com qualquer barulho, amassar pãozinhos, vigiar vizinhos, fazer motorzin. </p>
+        </div>
+      </div>
+    </main>
+    <main class="margarina">
+      <div class="container2">
+        <div class="margarinapng">
+          <img src="./img/margarina.png" alt="margarina" title="franguinho">
+        </div>
+        <div class="margarina-text">
+          <h1>Margarina <a name="margarina"></a> </h1>
+          <h2> s.f | gato | comida </h2>
+          <p> 1. variações: fangalinas, frango, pangarinha, magalinhas, safamines... </p>
+          <p>2. atividades favoritas: botar fogo no mundo, subir em tudo, não sossegar um momento.</p>
+          <p>3. habilidades: matar a humana de susto diariamente, ser a mandante de todas as bagunças, ser linda demais. </p>
+        </div>
+      </div>
+    </main>
+    <main class="fefis">
+      <div class="container3">
+        <div class="fefispng">
+          <img src="./img/fefis.png" alt="pepi" title="fefis">
+        </div>
+        <div class="fefis-text">
+          <h1>Kekkei Genkai<a name="kekkei genkai"></a> </h1>
+          <h2> (??) | gato | herança sanguínea </h2>
+          <p> 1. variações: fefis, pepis poupinhas, pepi lorinha, fefis golfinhas...</p>
+          <p>2. atividades favoritas: gritar para comer, morder do nada, bater nos seus irmaos.</p>
+          <p>3. habilidades: ser muito carinhoso (e ao mesmo tempo morder geral), motor mais alto da casa (parece que ta roncando). </p>
+        </div>
+      </div>
+    </main>
+    <main class="date-time">
+      <div class="time" id="txt">
+      </div>
+      <div class="data">
+        <script type="text/javascript">
+          document.write("<p> " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>")
+        </script>
+      </div>
+    </main>
+  </body>
+
+  </html>
