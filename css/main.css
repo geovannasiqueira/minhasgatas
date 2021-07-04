@@ -150,6 +150,7 @@ main {
   margin-top: 30px;
 }
 .date-time{
+  width:100%;
   color: #737373;
   background-color: #fffaee;
   border-bottom: 5px dashed #ffc872;
@@ -181,4 +182,5 @@ main {
   height: 30px;
   background-color: #f9edd1;
   border-bottom: 5px dashed #d6e3dd;
+  display: inline-block;
 }
